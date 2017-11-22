@@ -24,8 +24,9 @@
 			var cart = localStorage.getItem('products');
 			if(cart){
 				cart = JSON.parse(cart);
+				this.cartnum = cart.length;
 			}
-			this.cartnum = cart.length;
+			
 		}
 	}
 </script>

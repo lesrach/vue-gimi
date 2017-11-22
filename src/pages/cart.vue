@@ -66,7 +66,7 @@ export default{
 	},
 	created(){
 		 var p = localStorage.getItem('products');
-		 if(p.length){
+		 if(p && p.length){
 		 	p = JSON.parse(p);
 		 	this.products = p;
 		 }
